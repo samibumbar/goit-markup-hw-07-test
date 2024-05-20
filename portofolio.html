@@ -14,14 +14,41 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Portofolio</title>
   </head>
   <body>
     <!--Header section -->
     <header id="webStudio">
-      <section class="nav-section studio-section-header">
-        <div class="container studio-container">
+      <section class="mobile-navigation">
+        <div class="container">
+          <div class="mobile-logo">
+            <div class="logo">
+              <a href="#webStudio" class="logo-link"
+                ><p class="studio"><span class="span">Web</span>Studio</p></a
+              >
+            </div>
+            <button class="js-open-menu mobile-menu-btn">
+              <svg
+                width="30"
+                height="24"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0
+                  011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0
+                  110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="nav-section">
+        <div class="container">
           <div class="logo">
             <a href="#webStudio" class="logo-link"
               ><p class="studio"><span class="span">Web</span>Studio</p></a
@@ -29,18 +56,15 @@
           </div>
           <nav class="nav-bar">
             <ul class="header__nav-list">
-              <li class="active">
-                <a href="./index.html" class="nav-link">Studio</a>
-              </li>
-              <li class="active">
-                <a
-                  href="./portofolio.html"
-                  data-active="portofolio.html"
-                  class="nav-link"
-                  >Portofolio</a
+              <li>
+                <a href="./index.html" data-active="index.html" class="nav-link"
+                  >Studio</a
                 >
               </li>
-              <li class="active">
+              <li>
+                <a href="./portofolio.html" class="nav-link">Portofolio</a>
+              </li>
+              <li>
                 <a href="#contact" data-active="#contact" class="nav-link"
                   >Contacts</a
                 >
@@ -57,7 +81,7 @@
                 <svg class="nav-icon__item">
                   <use href="./images/icons.svg#icon-envelope" />
                 </svg>
-                <p class="nav-contact__item">info@devstudio.com</p>
+                <p class="nav-contact">info@devstudio.com</p>
               </a>
             </div>
             <div class="nav-contacts">
@@ -65,13 +89,14 @@
                 <svg class="nav-icon__item">
                   <use href="./images/icons.svg#icon-smartphone" />
                 </svg>
-                <p class="nav-contact__item">+1 212-772-4150</p>
+                <p class="nav-contact">+1 212-772-4150</p>
               </a>
             </div>
           </div>
         </div>
       </section>
     </header>
+
     <main>
       <!-- About us section -->
       <section class="section">
@@ -81,6 +106,7 @@
             <li><button class="btn-item" type="button">Web-sites</button></li>
             <li><button class="btn-item" type="button">Apps</button></li>
             <br />
+
             <li><button class="btn-item" type="button">Design</button></li>
             <li><button class="btn-item" type="button">Marketing</button></li>
           </ul>
@@ -196,6 +222,67 @@
               </div>
               <h3 class="our-projects__title">Inspiration has no Borders</h3>
               <p class="our-projects__subtitle">Web-site</p>
+            </div>
+            <!-- nav-menu -->
+            <div class="js-menu-container">
+              <nav class="nav-bar__mobile">
+                <button class="js-close-menu button-close-nav">x</button>
+                <ul class="header__nav-list">
+                  <li>
+                    <a
+                      href="./index.html"
+                      data-active="index.html"
+                      class="nav-link"
+                      >Studio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./portofolio.html" class="nav-link">Portofolio</a>
+                  </li>
+                  <li>
+                    <a href="#contact" data-active="#contact" class="nav-link"
+                      >Contacts</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__nav-links-mobile">
+                <div class="nav-contacts">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="nav-contact"
+                    target="_blank"
+                  >
+                    <p class="nav-contact">info@devstudio.com</p>
+                  </a>
+                </div>
+                <div class="nav-contacts">
+                  <a
+                    href="tel:+1212-772-4150"
+                    class="nav-contact"
+                    target="_blank"
+                  >
+                    <p class="nav-contact">+1 212-772-4150</p>
+                  </a>
+                </div>
+              </div>
+              <div class="social-links">
+                <div class="social-link social-links_item">
+                  <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+                <div class="social-links__vertical-line"></div>
+                <div class="social-link social-links_item">
+                  <a href="https://www.twitter.com/">Twitter</a>
+                </div>
+                <div class="social-links__vertical-line"></div>
+                <div class="social-link social-links_item">
+                  <a href="https://www.facebook.com/">Facebook</a>
+                </div>
+                <div class="social-links__vertical-line"></div>
+                <div class="social-link">
+                  <a href="https://www.linkedin.com/">Linkedin</a>
+                </div>
+              </div>
             </div>
             <div class="our-projects-item">
               <div class="our-projects__img">
@@ -349,5 +436,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/mobile.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.0.3/bodyScrollLock.min.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Studio</title>
   </head>
   <body>
@@ -21,26 +21,29 @@
     <header id="webStudio">
       <section class="mobile-navigation">
         <div class="container">
-          <div class="logo-mobile">
-            <a href="#webStudio" class="logo-link"
-              ><p class="studio"><span class="span">Web</span>Studio</p></a
-            >
+          <div class="mobile-logo">
+            <div class="logo">
+              <a href="#webStudio" class="logo-link"
+                ><p class="studio"><span class="span">Web</span>Studio</p></a
+              >
+            </div>
+            <button class="js-open-menu mobile-menu-btn">
+              <svg
+                width="30"
+                height="24"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0
+                  011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0
+                  110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
           </div>
-          <button class="js-open-menu mobile-menu-btn">
-            <svg
-              width="30"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
         </div>
       </section>
       <section class="nav-section">
@@ -77,15 +80,19 @@
                 <svg class="nav-icon__item">
                   <use href="./images/icons.svg#icon-envelope" />
                 </svg>
-                <p class="nav-contact__item">info@devstudio.com</p>
+                <p class="nav-contact">info@devstudio.com</p>
               </a>
             </div>
             <div class="nav-contacts">
-              <a href="tel:+1212-772-4150" class="nav-contact" target="_blank">
+              <a
+                href="tel:+1212-772-4150"
+                class="nav-contact nav-contact__item"
+                target="_blank"
+              >
                 <svg class="nav-icon__item">
                   <use href="./images/icons.svg#icon-smartphone" />
                 </svg>
-                <p class="nav-contact__item">+1 212-772-4150</p>
+                <p class="nav-contact">+1 212-772-4150</p>
               </a>
             </div>
           </div>
@@ -99,8 +106,8 @@
         <div class="container">
           <div class="hero-section-contend">
             <h1 class="hero-section__title">
-              EFFECTIVE SOLUTIONS FOR<br />
-              YOUR BUSINESS
+              EFFECTIVE SOLUTIONS <br />
+              FOR YOUR BUSINESS
             </h1>
             <button data-modal-open class="hero-section__btn" type="button">
               Request our service
@@ -108,24 +115,21 @@
           </div>
         </div>
       </section>
-      <!--  -->
+      <!-- nav-menu -->
       <div class="js-menu-container">
         <nav class="nav-bar__mobile">
           <button class="js-close-menu button-close-nav">x</button>
-          <ul class="header__nav-list-mobile">
+          <ul class="header__nav-list">
             <li>
-              <a
-                href="./index.html"
-                data-active="index.html"
-                class="nav-link-mobile"
+              <a href="./index.html" data-active="index.html" class="nav-link"
                 >Studio</a
               >
             </li>
             <li>
-              <a href="./portofolio.html" class="nav-link-mobile">Portofolio</a>
+              <a href="./portofolio.html" class="nav-link">Portofolio</a>
             </li>
             <li>
-              <a href="#contact" data-active="#contact" class="nav-link-mobile"
+              <a href="#contact" data-active="#contact" class="nav-link"
                 >Contacts</a
               >
             </li>
@@ -138,22 +142,34 @@
               class="nav-contact"
               target="_blank"
             >
-              <svg class="nav-icon__item">
-                <use href="./images/icons.svg#icon-envelope" />
-              </svg>
-              <p class="nav-contact__item">info@devstudio.com</p>
+              <p class="nav-contact">info@devstudio.com</p>
             </a>
           </div>
           <div class="nav-contacts">
             <a href="tel:+1212-772-4150" class="nav-contact" target="_blank">
-              <svg class="nav-icon__item">
-                <use href="./images/icons.svg#icon-smartphone" />
-              </svg>
-              <p class="nav-contact__item">+1 212-772-4150</p>
+              <p class="nav-contact">+1 212-772-4150</p>
             </a>
           </div>
         </div>
+        <div class="social-links">
+          <div class="social-link social-links_item">
+            <a href="https://www.instagram.com/">Instagram</a>
+          </div>
+          <div class="social-links__vertical-line"></div>
+          <div class="social-link social-links_item">
+            <a href="https://www.twitter.com/">Twitter</a>
+          </div>
+          <div class="social-links__vertical-line"></div>
+          <div class="social-link social-links_item">
+            <a href="https://www.facebook.com/">Facebook</a>
+          </div>
+          <div class="social-links__vertical-line"></div>
+          <div class="social-link">
+            <a href="https://www.linkedin.com/">Linkedin</a>
+          </div>
+        </div>
       </div>
+
       <!--About section-->
       <section class="section about-us-section" id="studio">
         <div class="container">
@@ -467,66 +483,67 @@
     <!-- Footer section -->
     <footer>
       <section class="footer-section" id="contact">
-        <div class="container">
-          <div>
-            <div class="logo">
-              <a href="#webStudio" class="logo-link">
-                <p class="studio"><span class="span">Web</span>Studio</p></a
-              >
-            </div>
-            <address class="address">
-              <p>695 Park Ave, NY 10065, USA</p>
+        <div class="container wrapper">
+          <div class="footer-wrapper">
+            <div>
+              <div class="logo">
+                <a href="#webStudio" class="logo-link">
+                  <p class="studio"><span class="span">Web</span>Studio</p></a
+                >
+              </div>
+              <address class="address">
+                <p>695 Park Ave, NY 10065, USA</p>
 
-              <ul class="address-list">
-                <li>
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="address-list__links"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+1212-772-4150" class="address-list__links"
-                    >+1 212-772-4150</a
-                  >
-                </li>
-              </ul>
-            </address>
+                <ul class="address-list">
+                  <li>
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="address-list__links"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:+1212-772-4150" class="address-list__links"
+                      >+1 212-772-4150</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <section class="find-us__section">
+              <h3 class="find-us__title">FIND US ON</h3>
+              <div class="find-us__icons">
+                <div class="find-us-icon">
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <svg class="find-us-icon__item">
+                      <use href="./images/icons.svg#icon-instagram" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="find-us-icon">
+                  <a href="https://twitter.com/" target="_blank">
+                    <svg class="find-us-icon__item">
+                      <use href="./images/icons.svg#icon-twitter" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="find-us-icon">
+                  <a href="https://de-de.facebook.com/" target="_blank">
+                    <svg class="find-us-icon__item">
+                      <use href="./images/icons.svg#icon-facebook" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="find-us-icon">
+                  <a href="https://www.linkedin.com/feed/" target="_blank">
+                    <svg class="find-us-icon__item">
+                      <use href="./images/icons.svg#icon-linkedin" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </section>
           </div>
-          <section class="find-us__section">
-            <h3 class="find-us__title">FIND US ON</h3>
-            <div class="find-us__icons">
-              <div class="find-us-icon">
-                <a href="https://www.instagram.com/" target="_blank">
-                  <svg class="find-us-icon__item">
-                    <use href="./images/icons.svg#icon-instagram" />
-                  </svg>
-                </a>
-              </div>
-              <div class="find-us-icon">
-                <a href="https://twitter.com/" target="_blank">
-                  <svg class="find-us-icon__item">
-                    <use href="./images/icons.svg#icon-twitter" />
-                  </svg>
-                </a>
-              </div>
-              <div class="find-us-icon">
-                <a href="https://de-de.facebook.com/" target="_blank">
-                  <svg class="find-us-icon__item">
-                    <use href="./images/icons.svg#icon-facebook" />
-                  </svg>
-                </a>
-              </div>
-              <div class="find-us-icon">
-                <a href="https://www.linkedin.com/feed/" target="_blank">
-                  <svg class="find-us-icon__item">
-                    <use href="./images/icons.svg#icon-linkedin" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </section>
-
           <section class="subscribe-section">
             <h3 class="subscribe-section__title">
               Subscribe to the newsletter
@@ -558,7 +575,8 @@
       <div data-modal-contend>
         <button data-modal-close type="button">x</button>
         <h2 class="modal-title">
-          Leave your information and we'll call you back
+          Leave your information and we'll call <br />
+          you back
         </h2>
         <form name="modal-form" class="modal-form">
           <label class="modal-form__position"
@@ -617,5 +635,6 @@
     <script src="./js/modal.js"></script>
     <script src="./js/script.js"></script>
     <script src="./js/mobile.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.0.3/bodyScrollLock.min.js"></script> -->
   </body>
 </html>

@@ -23,6 +23,11 @@ body {
   margin: 0;
   padding: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* mobile first */
 .section {
   padding: 40px 0;
@@ -1101,5 +1106,104 @@ body {
       url(../images/hero-bg-image.jpg);
     background-size: cover;
     position: relative;
+  }
+  .hero-section-contend {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0 200px 0;
+    align-items: center;
+  }
+  .hero-section .hero-section__title {
+    text-align: center;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+  }
+
+  [data-modal-contend] {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-title br {
+    display: none;
+  }
+  .modal-form__checked {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .conditions {
+    font-size: 14px;
+  }
+  /* about section */
+  .about-us-section__list {
+    flex-direction: row;
+  }
+  .about-us-section__title {
+    text-align: left;
+  }
+  .what-we-do__title {
+    display: block;
+    margin-top: 30px;
+  }
+
+  .what-we-do__container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 0px;
+  }
+  .img-box {
+    display: block;
+    position: relative;
+  }
+  .img-box__text {
+    position: absolute;
+    bottom: 0;
+    color: var(--white-color);
+    background-color: var(--transparent-bg-color);
+    width: 100%;
+    text-align: center;
+    line-height: 16.41px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    letter-spacing: 0.03em;
+    padding: 10px 0;
+  }
+  /* our team */
+  .team-section__cards {
+    flex-direction: row;
+    gap: 30px;
+  }
+  /* Customer section */
+  .customers-section__icons {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .customers-section__icon {
+    padding: 16px 36px;
+  }
+  /* footer section */
+  .footer-section .container {
+    flex-direction: row;
+    gap: 100px;
+  }
+  .subscribe-wrapper {
+    flex-direction: row;
+  }
+  .subscribe-btn__svg {
+    left: 5px;
+  }
+  .footer-wrapper {
+    display: flex;
+    gap: 100px;
+  }
+  .find-us__title {
+    text-align: left;
+  }
+  .subscribe-section__title {
+    margin-top: -30px;
+    text-align: left;
   }
 }

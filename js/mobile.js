@@ -12,12 +12,11 @@
       bodyScrollLock.enableBodyScroll(document.body);
     }
   };
-
   openMenuBtn.addEventListener('click', () => toggleMenu(false));
   closeMenuBtn.addEventListener('click', () => toggleMenu(true));
 
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (e.matches) toggleMenu(false);
+  window.matchMedia('(min-width: 428px)').addEventListener('change', e => {
+    if (e.matches) toggleMenu(true);
   });
 
   toggleMenu(true);
